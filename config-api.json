@@ -1,0 +1,12 @@
+{
+    "dbLocation": "/home/paradigma/api-chat/registrar_db/api-chat.db",
+    "port": 3080,
+    "winstonConsoleTransport": {
+        "level": "info",
+        "handleExceptions": false,
+        "timestamp": true,
+        "stringify": true,
+        "colorize": true,
+        "json": false
+    }
+ }
