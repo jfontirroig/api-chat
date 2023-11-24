@@ -11,7 +11,7 @@ const configDefaults = {
         json: false
     },
     domainName: 'api-chat.id',
-    dbLocation: '/home/paradigma/api-chat/registrar_db/api-chat.db',
+    dbLocation: '/home/api-chat/registrar_db/api-chat.db',
     port: 3080,
     prometheus: { start: false, port: 0 },
     minBatchSize: 1
