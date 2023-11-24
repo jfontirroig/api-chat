@@ -43,7 +43,7 @@ sudo ufw allow 'Nginx Full'
 ```
 upstream socket_nodes {
 	ip_hash;
-	server 127.0.0.1:3080;
+	server 127.0.0.1:3000;
 }
 ```
 
