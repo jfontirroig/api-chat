@@ -1,5 +1,5 @@
 {
-    "dbLocation": "/home/paradigma/api-chat/registrar_db/api-chat.db",
+    "dbLocation": "/home/api-chat/registrar_db/api-chat.db",
     "port": 3080,
     "winstonConsoleTransport": {
         "level": "info",
