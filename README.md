@@ -19,7 +19,7 @@ sudo pm2 monit
 ```
 sudo apt-get update
 sudo apt install certbot python3-certbot-nginx
-sudo certbot --nginx -d domains.paradigma.global
+sudo certbot --nginx -d anydomain
 ```
 
 ### Renovación
@@ -37,10 +37,8 @@ sudo apt-get install nginx
 sudo ufw allow 'Nginx Full'
 ```
 
+### sudo nano /etc/nginx/sites-available/default
 
-#### sudo nano /etc/nginx/sites-available/default
-
-'''
 Default server configuration
 
 upstream socket_nodes {
@@ -79,7 +77,6 @@ server {
        server_name anydomain;
        return 404; # managed by Certbot
 }
-'''
 
 '''
 sudo systemctl restart nginx
