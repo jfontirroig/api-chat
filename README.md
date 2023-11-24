@@ -40,10 +40,14 @@ sudo ufw allow 'Nginx Full'
 ### sudo nano /etc/nginx/sites-available/default
 (Default server configuration)
 
+```
 upstream socket_nodes {
 	ip_hash;
 	server 127.0.0.1:3080;
 }
+```
+
+```
 server {
 	root /var/www/html;
 	index index.html index.htm index.nginx-debian.html;
@@ -66,6 +70,9 @@ server {
 	include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot
 	ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot
 }
+```
+
+```
 server {
        if ($host = anydomain) {
           return 301 https://$host$request_uri;
@@ -76,21 +83,22 @@ server {
        server_name anydomain;
        return 404; # managed by Certbot
 }
+```
 
-'''
+```
 sudo systemctl restart nginx
 sudo systemctl reload nginx
 sudo systemctl stop nginx
 sudo systemctl start nginx
-'''
+```
 
 ## INSTALAR APP
 
-'''
+```
 cd /home/api-chat/
 sudo npm run build
 sudo pm2 delete api-chat
 sudo API_CONFIG=/home/api-chat/config-api.json pm2 start node lib/index.js --name "api-chat"
 sudo pm2 save
 sudo systemctl restart nginx
-'''
+```
