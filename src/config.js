@@ -12,7 +12,7 @@ const configDefaults = {
     },
     domainName: 'api-chat.id',
     dbLocation: '/home/api-chat/registrar_db/api-chat.db',
-    port: 3080,
+    port: 3000,
     prometheus: { start: false, port: 0 },
     minBatchSize: 1
 }
