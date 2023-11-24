@@ -38,8 +38,7 @@ sudo ufw allow 'Nginx Full'
 ```
 
 ### sudo nano /etc/nginx/sites-available/default
-
-Default server configuration
+(Default server configuration)
 
 upstream socket_nodes {
 	ip_hash;
