@@ -22,19 +22,24 @@ sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d domains.paradigma.global
 ```
 
-## Renovación
+### Renovación
+
+```
 sudo systemctl stop nginx
 sudo certbot renew --force-renew
+```
 
------------------------------------------------------------------------------------
+## Instalar Nginx
 
-# INSTALAR NGINX-----------
-
+```
 sudo apt-get update
 sudo apt-get install nginx
 sudo ufw allow 'Nginx Full'
+```
 
-sudo nano /etc/nginx/sites-available/default
+```
+### sudo nano /etc/nginx/sites-available/default
+```
 
 # Default server configuration
 #
