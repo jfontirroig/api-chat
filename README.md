@@ -1,19 +1,26 @@
+# API-CHAT
 
-# INSTALAR PM2-------------
+## Instalar PM2
+
+```
 sudo apt-get update
 sudo npm install -g pm2
+```
 
+```
 sudo pm2 list
 sudo pm2 stop app_name_or_id    (según name de sudo pm2 list)
 sudo pm2 start app_name_or_id   (según name de sudo pm2 list)
 sudo pm2 monit
+```
 
------------------------------------------------------------------------------------
+## Instalar Let's Encrypt
 
-# INSTALAR LET'S ENCRYPTS
+```
 sudo apt-get update
 sudo apt install certbot python3-certbot-nginx
 sudo certbot --nginx -d domains.paradigma.global
+```
 
 ## Renovación
 sudo systemctl stop nginx
