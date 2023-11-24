@@ -1,7 +1,7 @@
 {
     "name": "API-CHAT",
     "version": "1.0.0",
-    "description": "A Service API CHAT for Paradigma Crosscheck",
+    "description": "A Service API CHAT",
     "private": true,
     "main": "lib/index.js",
     "dependencies": {
@@ -55,9 +55,9 @@
         "api": "lib/index.js"
     },
     "scripts": {
-      "start": "API_CONFIG=/home/paradigma/api-chat/config-api.json sudo npm run build && node lib/index.js sudo npm run start",
-      "start:regtest": "API_DEVELOP=/home/paradigma/api-chat/config-develop.json API_REGTEST=true sudo npm run start",
-      "build": "API_CONFIG=/home/paradigma/api-chat/config-api.json babel src -d lib",
+      "start": "API_CONFIG=/home/api-chat/config-api.json sudo npm run build && node lib/index.js sudo npm run start",
+      "start:regtest": "API_DEVELOP=/home/api-chat/config-develop.json API_REGTEST=true sudo npm run start",
+      "build": "API_CONFIG=/home/api-chat/config-api.json babel src -d lib",
       "flow": "flow",
       "lint": "eslint src",
       "lint:fix": "eslint src --fix",
@@ -76,12 +76,11 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/paradigma-cl/api.git"
+        "url": "https://github.com/jfontirroig/api-chat"
     },
     "author": {
-        "name": "Paradigma Global",
-        "email": "info@paradigma.global",
-        "url": "https://paradigma.global"
+        "name": "Josep Fontirroig",
+        "email": "jfontirroig@gmail.com"
     },
     "license": "MIT",
     "contributors": [
@@ -90,9 +89,9 @@
         }
     ],
     "bugs": {
-        "url": "https://github.com/paradigma-cl/api/issues"
+        "url": "https://github.com/jfontirroig/api-chat/issues"
     },
-    "homepage": "https://github.com/paradigma-cl/api#readme",
+    "homepage": "https://github.com/jfontirroig/api-chat#readme",
     "commitlint": {
         "extends": [
             "@commitlint/config-conventional"
