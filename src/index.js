@@ -29,8 +29,8 @@ const io = new Server(server, {
 })
 
 app.get('/socket.io', (req, res) => {
-    logger.info('Welcome to WebSocket Server Chat for Crosscheck')
-    res.json({message: "Welcome to WebSocket Server Chat for Crosscheck :)"});
+    logger.info('Welcome to WebSocket Server Chat ')
+    res.json({message: "Welcome to WebSocket Server Chat :)"});
 })
 
 io.of('/socket.io').on('connection', async (socket) => {
